@@ -502,7 +502,7 @@ class Fuzzer():
 	def generate(self):
 		self.domains.add(Permutation(fuzzer='*original', domain='.'.join(filter(None, [self.subdomain, self.domain, self.tld]))))
 		for f_name in [
-			'addition', 'bitsquatting', 'homoglyph', 'hyphenation',
+			'addition', 'bitsquatting', 'hyphenation',
 			'insertion', 'omission', 'repetition', 'replacement',
 			'subdomain', 'transposition', 'vowel-swap', 'dictionary',
 		]:

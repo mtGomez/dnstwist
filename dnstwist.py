@@ -504,7 +504,7 @@ class Fuzzer():
 		for f_name in [
 			'addition', 'bitsquatting', 'hyphenation',
 			'insertion', 'omission', 'repetition', 'replacement',
-			'subdomain', 'transposition', 'vowel-swap', 'dictionary',
+			'transposition', 'vowel-swap', 'dictionary',
 		]:
 			f = getattr(self, '_' + f_name.replace('-', '_'))
 			for domain in f():
